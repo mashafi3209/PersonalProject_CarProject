@@ -20,7 +20,10 @@ public class Main extends Application {
 
 
     public static void main(String[] args) {
-        Truck truck = new Truck(2018,"Toyota", "Tacoma",Color.Black, new TrucksCharecteristics(6,EngineType.FOUR_CYLINDER,GearType.Automatic,Doors.Four,TruckType.PickUP,WheelDrive.ALL_WHEEL_DRIVE));
+
+        Truck truck = new Truck(2018,"Toyota", "Tacoma", VheicleType.TRUCK, Color.Black,6, EngineType.FOUR_CYLINDER,GearType.Automatic,Doors.Four,TruckType.PickUP,WheelDrive.ALL_WHEEL_DRIVE,5);
         truck.toString();
+
+
     }
 }

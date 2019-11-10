@@ -16,6 +16,7 @@ public abstract class Vehicle implements CProperties{
 
   }
 
+
   public Color getColor() {
     return color;
   }

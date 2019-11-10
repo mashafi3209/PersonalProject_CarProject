@@ -1,6 +1,6 @@
 package sample;
 
-public class TrucksCharecteristics implements TruckProperties {
+public class TrucksCharecteristics extends Vehicle implements TruckProperties {
   int noOfWheel;
   EngineType engineType;
   GearType gearType;
@@ -31,7 +31,9 @@ public class TrucksCharecteristics implements TruckProperties {
   public void setTruckType(TruckType truckType) {
     this.truckType = truckType;
   }
-  TrucksCharecteristics(int noOfWheel, EngineType engineType, GearType gearType, Doors noOfDoors, TruckType truckType, WheelDrive wheelDrive){
+  TrucksCharecteristics(int year, String make, String model, VheicleType type,Color color,int noOfWheel, EngineType engineType, GearType gearType, Doors noOfDoors, TruckType truckType, WheelDrive wheelDrive){
+    super(year, make, model, type, color);
+
     setNoOfWheel(noOfWheel);
     setEngineType(engineType);
     setGearType(gearType);
@@ -69,9 +71,30 @@ public class TrucksCharecteristics implements TruckProperties {
   public String getTruckType() {
     return null;
   }
+
+  /*  @Override
+    public String getWheelDrive() {
+      return null;
+    }
+
+    @Override
+    public int getNoOfDoors() {
+      return 0;
+    }
+
+    @Override
+    public String getGearType() {
+      return null;
+    }
+
+    @Override
+    public String getTruckType() {
+      return null;
+    }*/
   @Override
   public String toString() {
-    return ("\nThis is a "+ truckType + " truck. \nThe truck has "+ noOfDoors + " doors \n "+
+
+    return (super.toString()+ "\nThis is a "+ truckType + " truck. \nThe truck has "+ noOfDoors + " doors \n "+
         "the Truck has "+ noOfWheel + " wheel in it \n It is a " + wheelDrive + " Truck. \n It has a "+gearType + " gear. \n The Engine on this truck is " + engineType );
   }
 }
