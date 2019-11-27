@@ -5,6 +5,7 @@ public interface CProperties {
   String getMake();
   String getModel();
   VheicleType getType();
+  PowerSource getPower();
 
 
 }

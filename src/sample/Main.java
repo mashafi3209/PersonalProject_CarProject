@@ -6,23 +6,17 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class Main extends Application {
+public class Main {
 
-
-
-    @Override
-    public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(root, 300, 275));
-        primaryStage.show();
-    }
 
 
     public static void main(String[] args) {
 
-        Truck truck = new Truck(2018,"Toyota", "Tacoma", VheicleType.TRUCK, Color.Black,6, EngineType.FOUR_CYLINDER,GearType.Automatic,Doors.Four,TruckType.PickUP,WheelDrive.ALL_WHEEL_DRIVE,5);
+        Truck truck = new Truck(2018,"Toyota", "Tacoma", VheicleType.SEDAN, Color.Black,PowerSource.Disel, 6, EngineType.FOUR_CYLINDER,
+            GearType.Automatic,Doors.Four,TruckType.PickUP,WheelDrive.ALL_WHEEL_DRIVE,5);
         truck.toString();
+        Sedan sedan = new Sedan(2019,"Ford","Focus",VheicleType.SEDAN, Color.Red, PowerSource.Gasoline,EngineType.FOUR_CYLINDER,GearType.Automatic,Doors.Two,SedanType.Compact);
+        sedan.toString();
 
 
     }

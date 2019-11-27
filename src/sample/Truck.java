@@ -3,7 +3,6 @@ package sample;
 import java.sql.SQLOutput;
 
 public class Truck extends TrucksCharecteristics implements PerformanceSpecs {
-  TrucksCharecteristics trucksCharecteristics;
   int horsePower;
 
 
@@ -18,9 +17,9 @@ public class Truck extends TrucksCharecteristics implements PerformanceSpecs {
     this.horsePower = horsePower;
   }
 
-  Truck(int year, String make, String model, VheicleType type,Color color,
+  Truck(int year, String make, String model, VheicleType type,Color color, PowerSource powerSource,
       int noOfWheel, EngineType engineType, GearType gearType, Doors noOfDoors, TruckType truckType, WheelDrive wheelDrive, int horsePower) {
-    super(year, make, model, type,color,
+    super(year, make, model, type,color, powerSource,
     noOfWheel, engineType, gearType, noOfDoors, truckType, wheelDrive);
     setHorsePower(horsePower);
 
@@ -28,20 +27,6 @@ public class Truck extends TrucksCharecteristics implements PerformanceSpecs {
   }
 
 
-  /*@Override
-    public int noOfWheel() {
-      return noOfWheel;
-    }
-
-    @Override
-    public String engineType() {
-      return engineType;
-    }
-
-    @Override
-    public String wheelDrive() {
-      return wheelDrive;
-    }*/
   @Override
   public String toString() {
     System.out.println(super.toString()+

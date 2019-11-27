@@ -31,8 +31,8 @@ public class TrucksCharecteristics extends Vehicle implements TruckProperties {
   public void setTruckType(TruckType truckType) {
     this.truckType = truckType;
   }
-  TrucksCharecteristics(int year, String make, String model, VheicleType type,Color color,int noOfWheel, EngineType engineType, GearType gearType, Doors noOfDoors, TruckType truckType, WheelDrive wheelDrive){
-    super(year, make, model, type, color);
+  TrucksCharecteristics(int year, String make, String model, VheicleType type,Color color, PowerSource powerSource,int noOfWheel, EngineType engineType, GearType gearType, Doors noOfDoors, TruckType truckType, WheelDrive wheelDrive){
+    super(year, make, model, type, color, powerSource);
 
     setNoOfWheel(noOfWheel);
     setEngineType(engineType);
@@ -71,6 +71,10 @@ public class TrucksCharecteristics extends Vehicle implements TruckProperties {
   public String getTruckType() {
     return null;
   }
+  @Override
+  public PowerSource getPower() {
+    return null;
+  }
 
   /*  @Override
     public String getWheelDrive() {
@@ -97,4 +101,6 @@ public class TrucksCharecteristics extends Vehicle implements TruckProperties {
     return (super.toString()+ "\nThis is a "+ truckType + " truck. \nThe truck has "+ noOfDoors + " doors \n "+
         "the Truck has "+ noOfWheel + " wheel in it \n It is a " + wheelDrive + " Truck. \n It has a "+gearType + " gear. \n The Engine on this truck is " + engineType );
   }
+
+
 }
