@@ -12,11 +12,11 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Truck truck = new Truck(2018,"Toyota", "Tacoma", VheicleType.SEDAN, Color.Black,PowerSource.Disel, 6, EngineType.FOUR_CYLINDER,
-            GearType.Automatic,Doors.Four,TruckType.PickUP,WheelDrive.ALL_WHEEL_DRIVE,5);
-        truck.toString();
-        Sedan sedan = new Sedan(2019,"Ford","Focus",VheicleType.SEDAN, Color.Red, PowerSource.Gasoline,EngineType.FOUR_CYLINDER,GearType.Automatic,Doors.Two,SedanType.Compact);
-        sedan.toString();
+        Truck truck = new Truck(2018,"Toyota", "Tacoma", Color.Black,PowerSource.Disel, 6, EngineType.FOUR_CYLINDER,
+            GearType.Automatic,Doors.Four,TruckType.PickUp,WheelDrive.ALL_WHEEL_DRIVE,5);
+        System.out.println(truck.toString());
+        Sedan sedan = new Sedan(2019,"Ford","Focus", Color.Red, PowerSource.Gasoline,EngineType.FOUR_CYLINDER,GearType.Automatic,Doors.Two,SedanType.Compact);
+        System.out.println(sedan.toString());
 
 
     }

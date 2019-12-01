@@ -1,7 +1,5 @@
 package sample;
 
-import java.sql.SQLOutput;
-
 public class Truck extends TrucksCharecteristics implements PerformanceSpecs {
   int horsePower;
 
@@ -13,25 +11,34 @@ public class Truck extends TrucksCharecteristics implements PerformanceSpecs {
     return 0;
   }
 
+  @Override
+  public double getMPG() {
+    return engineType.getMpg();
+
+  }
+
   public void setHorsePower(int horsePower) {
     this.horsePower = horsePower;
   }
 
-  Truck(int year, String make, String model, VheicleType type,Color color, PowerSource powerSource,
+  Truck(int year, String make, String model,Color color, PowerSource powerSource,
       int noOfWheel, EngineType engineType, GearType gearType, Doors noOfDoors, TruckType truckType, WheelDrive wheelDrive, int horsePower) {
-    super(year, make, model, type,color, powerSource,
+    super(year, make, model,color, powerSource,
     noOfWheel, engineType, gearType, noOfDoors, truckType, wheelDrive);
     setHorsePower(horsePower);
 
 
   }
 
+  @Override
+  public VheicleType getType() {
+    return truckType;
+  }
 
   @Override
   public String toString() {
-    System.out.println(super.toString()+
-        "\n it has horse power of " + horsePower);
-    return null;
+    return super.toString()+
+        "\n it has horse power of " + horsePower + "\n The MPG for that vheicle is " + getMPG();
   }
 
 

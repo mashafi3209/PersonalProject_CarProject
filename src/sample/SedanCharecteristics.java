@@ -2,7 +2,10 @@ package sample;
 
 import com.sun.xml.internal.ws.api.pipe.Engine;
 
-public class SedanCharecteristics extends Vehicle implements SedanProperties {
+/**
+ *
+ */
+public abstract class SedanCharecteristics extends Vehicle implements SedanProperties {
   EngineType engineType;
   GearType gearType;
   Doors noOfDoors;
@@ -32,9 +35,10 @@ public class SedanCharecteristics extends Vehicle implements SedanProperties {
   public void setSedanType(SedanType sedanType) {
     this.sedanType = sedanType;
   }
-  public SedanCharecteristics(int year, String make, String model,VheicleType type,Color color, PowerSource powerSource,EngineType engineType, GearType gearType, Doors noOfDoors,
+
+  public SedanCharecteristics(int year, String make, String model,Color color, PowerSource powerSource,EngineType engineType, GearType gearType, Doors noOfDoors,
       SedanType sedanType) {
-    super(year, make, model, type, color, powerSource);
+    super(year, make, model, color, powerSource);
    setEngineType(engineType);
     setNoOfDoors(noOfDoors);
     setGearType(gearType);
@@ -63,7 +67,7 @@ public class SedanCharecteristics extends Vehicle implements SedanProperties {
   @Override
   public String toString() {
 
-    return (super.toString()+ "\nThis is a "+ sedanType + " sedan. \nThe sedan has "+ noOfDoors + " doors \n It has "+gearType + " gear. \n The Engine on this sedan is " + engineType );
+    return ("\n"+super.toString()+ "\nThis is a "+ sedanType + " sedan. \nThe sedan has "+ noOfDoors + " doors \n It has "+gearType + " gear. \n The Engine on this sedan is " + engineType.getCode() );
   }
 
   @Override

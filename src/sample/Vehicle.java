@@ -5,14 +5,12 @@ public abstract class Vehicle implements CProperties{
   int year;
   String make;
   String model;
-  VheicleType type;
   Color color;
   PowerSource powerSource;
-  Vehicle(int year, String make, String model, VheicleType type,Color color, PowerSource powerSource){
+  Vehicle(int year, String make, String model,Color color, PowerSource powerSource){
     this.year = year;
     this.make = make;
     this.model = model;
-    this.type = type;
     this.color = color;
     this.powerSource  = powerSource;
   }
@@ -50,13 +48,8 @@ public abstract class Vehicle implements CProperties{
     this.model = model;
   }
 
-  public VheicleType getType() {
-    return type;
-  }
+  public abstract VheicleType getType();
 
-  public void setType(VheicleType type) {
-    this.type = type;
-  }
 
   public PowerSource getPowerSource() {
     return powerSource;
@@ -69,6 +62,6 @@ public abstract class Vehicle implements CProperties{
   @Override
   public String toString()
   {
-    return("This is a "+type + "\n It is made by " + make +"\n It is know as " + model +".\n It came out in the year of " +year +"\n The coolor of the vehicle is " + color + " This vehicle runs on "+ powerSource + " mode");
+    return("This is a "+getType().getName() + "\n It is made by " + make +"\n It is know as " + model +".\n It came out in the year of " +year +"\n The coolor of the vehicle is " + color + " This vehicle runs on "+ powerSource + " mode");
   }
 }
