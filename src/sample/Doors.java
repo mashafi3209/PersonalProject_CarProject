@@ -1,7 +1,9 @@
 
 
 package sample;
-
+/**
+ * Enum for doors
+ */
 public enum Doors {
 
   Two("has two doors"),
@@ -13,12 +15,21 @@ public enum Doors {
 
   private String doors;
 
+  /**
+   * Constructor
+   * @param doors get the doors full description from the enum
+   */
   Doors(String doors){
     this.doors = doors;
   }
 
 
 
+  /**
+   * Getter for property 'doors'.
+   *
+   * @return Value for property 'doors'.
+   */
   public String getDoors() {
     return doors;
   }

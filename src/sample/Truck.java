@@ -6,17 +6,24 @@ public class Truck extends TrucksCharecteristics implements PerformanceSpecs {
 
 
 
+  /** {@inheritDoc} */
   @Override
   public int getHorsePower() {
     return 0;
   }
 
+  /** {@inheritDoc} */
   @Override
   public double getMPG() {
     return engineType.getMpg();
 
   }
 
+  /**
+   * Setter for property 'horsePower'.
+   *
+   * @param horsePower Value to set for property 'horsePower'.
+   */
   public void setHorsePower(int horsePower) {
     this.horsePower = horsePower;
   }
@@ -30,15 +37,17 @@ public class Truck extends TrucksCharecteristics implements PerformanceSpecs {
 
   }
 
+  /** {@inheritDoc} */
   @Override
   public VheicleType getType() {
     return truckType;
   }
 
+  /** {@inheritDoc} */
   @Override
   public String toString() {
     return super.toString()+
-        "\n it has horse power of " + horsePower + "\n The MPG for that vheicle is " + getMPG();
+        "\nIt has horse power of " + horsePower + "\nThe MPG for that vheicle is " + getMPG();
   }
 
 

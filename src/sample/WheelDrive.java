@@ -12,6 +12,11 @@ public enum WheelDrive {
     this.code = code;
   }
 
+  /**
+   * Getter for property 'code'.
+   *
+   * @return Value for property 'code'.
+   */
   public String getCode() {
     return code;
   }

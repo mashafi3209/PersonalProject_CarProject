@@ -1,5 +1,8 @@
 package sample;
 
+/**
+ *
+ */
 public class Van extends VanCharecteristics implements VanProperties{
 
 
@@ -9,20 +12,27 @@ public class Van extends VanCharecteristics implements VanProperties{
     super(year, make, model, color, powerSource, engineType, gearType, vanType, noOfDoors,noOfSeats);
   }
 
+  /** {@inheritDoc} */
   @Override
   public VheicleType getType() {
     return vanType;
   }
 
+  /**
+   * Getter for property 'MPG'.
+   *
+   * @return Value for property 'MPG'.
+   */
   public double getMPG() {
     return engineType.getMpg();
 
   }
 
 
+  /** {@inheritDoc} */
   @Override
   public String toString() {
-    return (super.toString())+ "The mpg for Van is " + getMPG();
+    return (super.toString())+ "\nThe mpg for the van is " + getMPG();
 
   }
 
