@@ -11,3 +11,11 @@ Worked on the vehicle abstract class and created vehicle type enum
 
 #Week 9
 Created truck class and truck properties
+
+#Week 10
+Created the Sedan and worked on other enum
+
+#week 16
+Created NoOfSeats enum
+Created Van Class
+Created abstract VanCharecteristics

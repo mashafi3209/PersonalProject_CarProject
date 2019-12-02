@@ -64,8 +64,8 @@ public abstract class Vehicle implements CProperties{
   public String toString()
   {
 
-    return("This is a "+getType().getName() + "\n It is made by " + make +"\n It is know as " + model +
-        ".\n It came out in the year of " +year +"\n The color of the vehicle is " + color + "\nThis vehicle runs on "+ powerSource + " mode");
+    return("\nThis is a "+getType().getName() + "\nIt is made by " + make +"\nIt is know as " + model +
+        ".\nIt came out in the year of " +year +"\nThe color of the vehicle is " + color + "\nThis vehicle runs on "+ powerSource + " mode");
 
   }
 }

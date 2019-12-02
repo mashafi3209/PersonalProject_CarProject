@@ -21,7 +21,7 @@ public class Main {
         Suv suv = new Suv(2016,"GMC","Sports",Color.Red,PowerSource.Gasoline,EngineType.SIX_CYLINDER,GearType.Automatic,Doors.Four,SuvType.Subcompact,NoOfSeats.five);
         System.out.println(suv.toString());
         Van van = new Van(2016,"GMC","NULL",Color.Red, PowerSource.Gasoline,EngineType.SIX_CYLINDER,
-            GearType.Automatic,VanType.MidSize);
+            GearType.Automatic,VanType.MidSize,Doors.Four,NoOfSeats.five);
         System.out.println(van.toString());
 
 

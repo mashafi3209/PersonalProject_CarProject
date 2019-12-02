@@ -5,8 +5,8 @@ public class Van extends VanCharecteristics implements VanProperties{
 
   public Van(int year, String make, String model,
       Color color, PowerSource powerSource, EngineType engineType, GearType gearType,
-      VanType vanType/*, Doors doors, NoOfSeats noOfSeats*/) {
-    super(year, make, model, color, powerSource, engineType, gearType, vanType/*, doors, noOfSeats*/);
+      VanType vanType, Doors noOfDoors, NoOfSeats noOfSeats) {
+    super(year, make, model, color, powerSource, engineType, gearType, vanType, noOfDoors,noOfSeats);
   }
 
   @Override
@@ -26,8 +26,4 @@ public class Van extends VanCharecteristics implements VanProperties{
 
   }
 
- /* @Override
-  public Doors getDoors() {
-    return null;
-  }*/
 }
