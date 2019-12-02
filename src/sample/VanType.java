@@ -6,13 +6,19 @@ package sample;
 public enum VanType implements VheicleType{
   MuscleCar,Convertable,FullSize,MidSize,Compact;
 
-  /** {@inheritDoc} */
+  /**
+   *
+   * @return
+   */
   @Override
   public Class<? extends Vehicle> getType() {
     return Van.class;
   }
 
-  /** {@inheritDoc} */
+  /**
+   *
+   * @return
+   */
   @Override
   public String getName() {
     return "Van";

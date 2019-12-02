@@ -1,6 +1,10 @@
 package sample;
 
+/**
+ *
+ */
 public enum WheelDrive {
+
   ALL_WHEEL_DRIVE("AWD"),
   FRONT_WHEEL_DRIVE("FWD"),
   REAR_WHEEL_DRIVE("RWD"),
@@ -8,6 +12,10 @@ public enum WheelDrive {
 
   private String code;
 
+  /**
+   *
+   * @param code
+   */
   WheelDrive(String code) {
     this.code = code;
   }

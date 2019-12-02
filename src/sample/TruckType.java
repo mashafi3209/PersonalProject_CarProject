@@ -1,15 +1,24 @@
 package sample;
 
+/**
+ *
+ */
 public enum TruckType implements VheicleType {
   Semi,PickUp,TowTruck;
 
-  /** {@inheritDoc} */
+  /**
+   *
+   * @return
+   */
   @Override
   public Class<? extends Vehicle> getType() {
     return Truck.class;
   }
 
-  /** {@inheritDoc} */
+  /**
+   *
+   * @return
+   */
   @Override
   public String getName() {
     return "Truck";

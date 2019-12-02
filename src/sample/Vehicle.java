@@ -5,11 +5,23 @@ package sample;
  */
 public abstract class Vehicle implements VehicleProperties {
 
+  /**
+   *
+   */
   int year;
   String make;
   String model;
   Color color;
   PowerSource powerSource;
+
+  /**
+   *
+   * @param year
+   * @param make
+   * @param model
+   * @param color
+   * @param powerSource
+   */
   Vehicle(int year, String make, String model,Color color, PowerSource powerSource){
     this.year = year;
     this.make = make;
@@ -102,7 +114,10 @@ public abstract class Vehicle implements VehicleProperties {
     this.powerSource = powerSource;
   }
 
-  /** {@inheritDoc} */
+  /**
+   *
+   * @return
+   */
   @Override
   public String toString()
   {

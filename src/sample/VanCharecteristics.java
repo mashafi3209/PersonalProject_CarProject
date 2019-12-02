@@ -63,6 +63,19 @@ public abstract class VanCharecteristics extends Vehicle implements VanPropertie
     this.noOfSeats = noOfSeats;
   }
 
+  /**
+   *
+   * @param year
+   * @param make
+   * @param model
+   * @param color
+   * @param powerSource
+   * @param engineType
+   * @param gearType
+   * @param vanType
+   * @param noOfDoors
+   * @param noOfSeats
+   */
   public VanCharecteristics(int year, String make, String model,Color color, PowerSource powerSource,EngineType engineType, GearType gearType,
       VanType vanType, Doors noOfDoors, NoOfSeats noOfSeats) {
     super(year, make, model, color, powerSource);
@@ -92,27 +105,39 @@ public abstract class VanCharecteristics extends Vehicle implements VanPropertie
     return noOfDoors;
   }
 
-  /** {@inheritDoc} */
+  /**
+   *
+   * @return
+   */
   @Override
   public String getEngineType() {
     return null;
   }
 
 
-  /** {@inheritDoc} */
+  /**
+   *
+   * @return
+   */
   @Override
   public String getGearType() {
     return null;
   }
 
-  /** {@inheritDoc} */
+  /**
+   *
+   * @return
+   */
   @Override
   public String getVanType() {
     return null;
   }
 
 
-  /** {@inheritDoc} */
+  /**
+   *
+   * @return
+   */
   @Override
   public String toString() {
     return ("\n"+super.toString()+ "\nThis is a "+ vanType + " van. \nIt has "+gearType + " gear. \nIt "+ noOfDoors.getDoors()
@@ -120,7 +145,10 @@ public abstract class VanCharecteristics extends Vehicle implements VanPropertie
         + "\nThe Engine on this van is " + engineType.getCode());
   }
 
-  /** {@inheritDoc} */
+  /**
+   *
+   * @return
+   */
   @Override
   public PowerSource getPower() {
     return null;

@@ -12,7 +12,10 @@ public class Van extends VanCharecteristics implements VanProperties{
     super(year, make, model, color, powerSource, engineType, gearType, vanType, noOfDoors,noOfSeats);
   }
 
-  /** {@inheritDoc} */
+  /**
+   *
+   * @return
+   */
   @Override
   public VheicleType getType() {
     return vanType;
@@ -29,7 +32,10 @@ public class Van extends VanCharecteristics implements VanProperties{
   }
 
 
-  /** {@inheritDoc} */
+  /**
+   *
+   * @return
+   */
   @Override
   public String toString() {
     return (super.toString())+ "\nThe mpg for the van is " + getMPG();

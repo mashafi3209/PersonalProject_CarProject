@@ -1,5 +1,8 @@
 package sample;
 
+/**
+ *
+ */
 public abstract class TrucksCharecteristics extends Vehicle implements TruckProperties {
   int noOfWheel;
   EngineType engineType;
@@ -72,6 +75,21 @@ public abstract class TrucksCharecteristics extends Vehicle implements TruckProp
     this.noOfSeats = noOfSeats;
   }
 
+  /**
+   *
+   * @param year
+   * @param make
+   * @param model
+   * @param color
+   * @param powerSource
+   * @param noOfWheel
+   * @param engineType
+   * @param gearType
+   * @param noOfDoors
+   * @param truckType
+   * @param wheelDrive
+   * @param noOfSeats
+   */
   TrucksCharecteristics(int year, String make, String model,Color color, PowerSource powerSource,int noOfWheel, EngineType engineType, GearType gearType, Doors noOfDoors, TruckType truckType, WheelDrive wheelDrive,NoOfSeats noOfSeats){
     super(year, make, model, color, powerSource);
 
@@ -84,53 +102,81 @@ public abstract class TrucksCharecteristics extends Vehicle implements TruckProp
     setNoOfSeats(noOfSeats);
   }
 
-  /** {@inheritDoc} */
+  /**
+   *
+   * @return
+   */
   @Override
   public int getNoOfWheel() {
     return 0;
   }
 
-  /** {@inheritDoc} */
+  /**
+   *
+   * @return
+   */
   @Override
   public String getEngineType() {
     return null;
   }
 
-  /** {@inheritDoc} */
+  /**
+   *
+   * @return
+   */
   @Override
   public String getWheelDrive() {
     return null;
   }
 
-  /** {@inheritDoc} */
+  /**
+   *
+   * @return
+   */
   @Override
   public int getNoOfDoors() {
     return 0;
   }
 
-  /** {@inheritDoc} */
+  /**
+   *
+   * @return
+   */
   @Override
   public String getGearType() {
     return null;
   }
 
-  /** {@inheritDoc} */
+  /**
+   *
+   * @return
+   */
   @Override
   public String getTruckType() {
     return null;
   }
-  /** {@inheritDoc} */
+
+  /**
+   *
+   * @return
+   */
   @Override
   public PowerSource getPower() {
     return null;
   }
 
-  /** {@inheritDoc} */
+  /**
+   *
+   * @return
+   */
   public String getNoOfSeats() {
     return null;
   }
 
-  /** {@inheritDoc} */
+  /**
+   *
+   * @return
+   */
   @Override
   public VheicleType getType() {
     return null;
@@ -139,7 +185,9 @@ public abstract class TrucksCharecteristics extends Vehicle implements TruckProp
 
 
 
-  /** {@inheritDoc} */
+  /**
+   *
+   * */
   @Override
   public String toString() {
 
