@@ -3,6 +3,6 @@ package sample;
 public interface VheicleType {
 
   public Class<? extends Vehicle> getType();
-  public String getName ();
+  public String getName();
 
 }

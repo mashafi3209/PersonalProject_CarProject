@@ -7,6 +7,7 @@ public abstract class TrucksCharecteristics extends Vehicle implements TruckProp
   Doors noOfDoors;
   TruckType truckType;
   WheelDrive wheelDrive;
+  NoOfSeats noOfSeats;
 
   public void setNoOfWheel(int noOfWheel) {
     this.noOfWheel = noOfWheel;
@@ -32,8 +33,11 @@ public abstract class TrucksCharecteristics extends Vehicle implements TruckProp
     this.truckType = truckType;
   }
 
+  public void setNoOfSeats(NoOfSeats noOfSeats) {
+    this.noOfSeats = noOfSeats;
+  }
 
-  TrucksCharecteristics(int year, String make, String model,Color color, PowerSource powerSource,int noOfWheel, EngineType engineType, GearType gearType, Doors noOfDoors, TruckType truckType, WheelDrive wheelDrive){
+  TrucksCharecteristics(int year, String make, String model,Color color, PowerSource powerSource,int noOfWheel, EngineType engineType, GearType gearType, Doors noOfDoors, TruckType truckType, WheelDrive wheelDrive,NoOfSeats noOfSeats){
     super(year, make, model, color, powerSource);
 
     setNoOfWheel(noOfWheel);
@@ -42,6 +46,7 @@ public abstract class TrucksCharecteristics extends Vehicle implements TruckProp
     setNoOfDoors(noOfDoors);
     setTruckType(truckType);
     setWheelDrive(wheelDrive);
+    setNoOfSeats(noOfSeats);
   }
 
   @Override
@@ -78,35 +83,24 @@ public abstract class TrucksCharecteristics extends Vehicle implements TruckProp
     return null;
   }
 
+  public String getNoOfSeats() {
+    return null;
+  }
+
   @Override
   public VheicleType getType() {
     return null;
   }
 
-  /*  @Override
-      public String getWheelDrive() {
-        return null;
-      }
 
-      @Override
-      public int getNoOfDoors() {
-        return 0;
-      }
 
-      @Override
-      public String getGearType() {
-        return null;
-      }
 
-      @Override
-      public String getTruckType() {
-        return null;
-      }*/
   @Override
   public String toString() {
 
-    return (super.toString()+ "\nThis is a "+ truckType + " truck. \nThe truck has "+ noOfDoors + " doors \n "+
-        "the Truck has "+ noOfWheel + " wheel in it \n It is a " + wheelDrive + " Truck. \n It has a "+gearType + " gear. \n The Engine on this truck is " + engineType.getCode() );
+    return (super.toString()+ "\nThis is a "+ truckType + " truck. \nThe truck has "+ noOfDoors.getDoors() + "\nIt "+ noOfSeats.getTypeOfSeats() +
+        " seat which is known as " + noOfSeats.getSeatsFormation() + "\nthe Truck has "+ noOfWheel + " wheel in it \n It is a " + wheelDrive +
+        " Truck. \n It has a "+gearType + " gear. \n The Engine on this truck is " + engineType.getCode() );
   }
 
 

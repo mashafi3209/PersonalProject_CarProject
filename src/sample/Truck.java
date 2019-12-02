@@ -22,9 +22,9 @@ public class Truck extends TrucksCharecteristics implements PerformanceSpecs {
   }
 
   Truck(int year, String make, String model,Color color, PowerSource powerSource,
-      int noOfWheel, EngineType engineType, GearType gearType, Doors noOfDoors, TruckType truckType, WheelDrive wheelDrive, int horsePower) {
+      int noOfWheel, EngineType engineType, GearType gearType, Doors noOfDoors, TruckType truckType, WheelDrive wheelDrive, NoOfSeats noOfSeats, int horsePower) {
     super(year, make, model,color, powerSource,
-    noOfWheel, engineType, gearType, noOfDoors, truckType, wheelDrive);
+    noOfWheel, engineType, gearType, noOfDoors, truckType, wheelDrive, noOfSeats);
     setHorsePower(horsePower);
 
 

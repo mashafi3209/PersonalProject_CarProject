@@ -51,6 +51,7 @@ public abstract class Vehicle implements CProperties{
   public abstract VheicleType getType();
 
 
+
   public PowerSource getPowerSource() {
     return powerSource;
   }
@@ -62,6 +63,9 @@ public abstract class Vehicle implements CProperties{
   @Override
   public String toString()
   {
-    return("This is a "+getType().getName() + "\n It is made by " + make +"\n It is know as " + model +".\n It came out in the year of " +year +"\n The coolor of the vehicle is " + color + " This vehicle runs on "+ powerSource + " mode");
+
+    return("This is a "+getType().getName() + "\n It is made by " + make +"\n It is know as " + model +
+        ".\n It came out in the year of " +year +"\n The color of the vehicle is " + color + "\nThis vehicle runs on "+ powerSource + " mode");
+
   }
 }

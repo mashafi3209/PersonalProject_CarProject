@@ -1,15 +1,6 @@
-package sample;
 
-public enum Doors {
-  Two,Four
-}
-/*
-package sample;
 
-*/
-/**
- *Enum for doors count
- *//*
+package sample;
 
 public enum Doors {
 
@@ -22,19 +13,14 @@ public enum Doors {
 
   private String doors;
 
-  NoOfSeats(String doors){
+  Doors(String doors){
     this.doors = doors;
   }
 
-  */
-/**
-   * Getter for property 'doors'.
-   *
-   * @return Value for property 'doors'.
-   *//*
+
 
   public String getDoors() {
     return doors;
   }
 }
-*/
+

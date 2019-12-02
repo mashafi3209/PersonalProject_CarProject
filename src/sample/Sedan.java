@@ -1,12 +1,12 @@
 package sample;
 
-public class Sedan extends SedanCharecteristics{
+public class Sedan extends SedanCharecteristics implements SedanProperties{
 
 
   public Sedan(int year, String make, String model,
-      Color color, PowerSource powerSource, EngineType engineType, GearType gearType, Doors noOfDoors,
+      Color color, PowerSource powerSource, EngineType engineType, GearType gearType,
       SedanType sedanType) {
-    super(year, make, model, color, powerSource, engineType, gearType, noOfDoors, sedanType);
+    super(year, make, model, color, powerSource, engineType, gearType, sedanType);
   }
 
   @Override
@@ -22,7 +22,7 @@ public class Sedan extends SedanCharecteristics{
 
   @Override
   public String toString() {
-    return (super.toString())+ "\n he mpg for Sedan is " + getMPG();
+    return (super.toString())+ "The mpg for Sedan is " + getMPG();
 
   }
 }

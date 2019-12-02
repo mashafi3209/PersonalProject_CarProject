@@ -1,10 +1,10 @@
-/*
 package sample;
 
 public interface VanProperties {
-  public EngineType getEngineType();
-  public Doors getNoOfDoors();
-  public GearType getGearType();
-  public String getTruckType();
+  public String getEngineType();
+  public String getGearType();
+  public String getVanType();
+/*  public String getNoOfSeats();
+  public Doors getDoors();*/
+
 }
-*/

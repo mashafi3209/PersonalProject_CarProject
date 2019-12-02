@@ -21,5 +21,6 @@ public interface TruckProperties {
   public int getNoOfDoors();
   public String getGearType();
   public String getTruckType();
+  public String getNoOfSeats();
 
 }
