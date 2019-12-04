@@ -68,10 +68,10 @@ public abstract class SuvCharecteristics extends Vehicle implements SuvPropertie
 
   /**
    *
-   * @param year
-   * @param make
-   * @param model
-   * @param color
+   * @param year from Vehicle class as super
+   * @param make from Vehicle class as super
+   * @param model from Vehicle class as super
+   * @param color from Vehicle class as super
    * @param powerSource
    * @param engineType
    * @param gearType
@@ -90,9 +90,11 @@ public abstract class SuvCharecteristics extends Vehicle implements SuvPropertie
     setNoOfSeats(noOfSeats);
   }
 
+
   /**
+   * Getter for property 'EngineType'.
    *
-   * @return
+   * @return null;
    */
   @Override
   public String getEngineType() {
@@ -100,17 +102,20 @@ public abstract class SuvCharecteristics extends Vehicle implements SuvPropertie
   }
 
   /**
+   * Getter for property 'NoOfDoors'.
    *
-   * @return
+   * @return null;
    */
   @Override
   public int getNoOfDoors() {
     return 0;
   }
 
+
   /**
+   * Getter for property 'GearType'.
    *
-   * @return
+   * @return null;
    */
   @Override
   public String getGearType() {
@@ -118,8 +123,9 @@ public abstract class SuvCharecteristics extends Vehicle implements SuvPropertie
   }
 
   /**
+   * Getter for property 'NoOfDoors'.
    *
-   * @return
+   * @return null;
    */
   @Override
   public String getSuvType() {
@@ -147,7 +153,7 @@ public abstract class SuvCharecteristics extends Vehicle implements SuvPropertie
 
   /**
    *
-   * @return
+   * @return the String SUV system
    */
   @Override
   public String toString() {

@@ -4,7 +4,19 @@ package sample;
  *
  */
 public class Van extends VanCharecteristics implements VanProperties{
-
+  /**
+   *
+   * @param year from Vehicle class as super
+   * @param make from Vehicle class as super
+   * @param model from Vehicle class as super
+   * @param color from Vehicle class as super
+   * @param powerSource from Vehicle class as super
+   * @param engineType from VanCharacteristics class
+   * @param gearType from VanCharacteristics class
+   * @param noOfDoors from VanCharacteristics class
+   * @param vanType from VanCharacteristics class
+   * @param noOfSeats from VanCharacteristics class
+   */
 
   public Van(int year, String make, String model,
       Color color, PowerSource powerSource, EngineType engineType, GearType gearType,

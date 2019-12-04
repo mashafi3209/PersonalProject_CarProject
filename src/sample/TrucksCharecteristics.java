@@ -77,10 +77,10 @@ public abstract class TrucksCharecteristics extends Vehicle implements TruckProp
 
   /**
    *
-   * @param year
-   * @param make
-   * @param model
-   * @param color
+   * @param year from Vehicle class as super
+   * @param make from Vehicle class as super
+   * @param model from Vehicle class as super
+   * @param color from Vehicle class as super
    * @param powerSource
    * @param noOfWheel
    * @param engineType
