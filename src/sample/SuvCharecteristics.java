@@ -8,6 +8,7 @@ public abstract class SuvCharecteristics extends Vehicle implements SuvPropertie
   GearType gearType;
   Doors noOfDoors;
   SuvType suvType;
+  WheelDrive wheelDrive;
   NoOfSeats noOfSeats;
 
   /**
@@ -46,6 +47,16 @@ public abstract class SuvCharecteristics extends Vehicle implements SuvPropertie
     this.suvType = suvType;
   }
 
+
+  /**
+   * Setter for property 'wheelDrive'.
+   *
+   * @param wheelDrive Value to set for property 'wheelDrive'.
+   */
+  public void setWheelDrive(WheelDrive wheelDrive) {
+    this.wheelDrive = wheelDrive;
+  }
+
   /**
    * Setter for property 'noOfSeats'.
    *
@@ -69,12 +80,13 @@ public abstract class SuvCharecteristics extends Vehicle implements SuvPropertie
    * @param noOfSeats
    */
   public SuvCharecteristics(int year, String make, String model,Color color, PowerSource powerSource,EngineType engineType, GearType gearType, Doors noOfDoors,
-      SuvType suvType, NoOfSeats noOfSeats) {
+      SuvType suvType,WheelDrive wheelDrive, NoOfSeats noOfSeats) {
     super(year, make, model, color, powerSource);
     setEngineType(engineType);
     setNoOfDoors(noOfDoors);
     setGearType(gearType);
     setSuvType(suvType);
+    setWheelDrive(wheelDrive);
     setNoOfSeats(noOfSeats);
   }
 
@@ -114,6 +126,15 @@ public abstract class SuvCharecteristics extends Vehicle implements SuvPropertie
     return null;
   }
 
+  /**
+   * Getter for property 'wheelDrive'.
+   *
+   * @return Value for property 'wheelDrive'.
+   */
+  public WheelDrive getWheelDrive() {
+    return wheelDrive;
+  }
+
 
   /**
    * Getter for property 'noOfSeats'.
@@ -132,8 +153,8 @@ public abstract class SuvCharecteristics extends Vehicle implements SuvPropertie
   public String toString() {
 
     return ("\n"+super.toString()+ "\nThis is a "+ suvType + " Suv. \nThe Suv has "+ noOfDoors + " doors.\nIt has "+gearType + " gear. "+
-        "\nIt "+ noOfSeats.getTypeOfSeats() + " seat which is known as " + noOfSeats.getSeatsFormation()
-        + "\nThe Engine on this SUV is " + engineType.getCode() );
+        "\nIt is a "+ wheelDrive.getCode() +" SUV.\nIt "+ noOfSeats.getTypeOfSeats() + " seat which is known as "
+        + noOfSeats.getSeatsFormation() + "\nThe Engine on this SUV is " + engineType.getCode() );
   }
 
   /**

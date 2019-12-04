@@ -35,19 +35,19 @@ public class Truck extends TrucksCharecteristics implements PerformanceSpecs {
 
   /**
    *
-   * @param year
-   * @param make
-   * @param model
-   * @param color
-   * @param powerSource
-   * @param noOfWheel
-   * @param engineType
-   * @param gearType
-   * @param noOfDoors
-   * @param truckType
-   * @param wheelDrive
-   * @param noOfSeats
-   * @param horsePower
+   * @param year from Vehicle class as super
+   * @param make from Vehicle class as super
+   * @param model from Vehicle class as super
+   * @param color from Vehicle class as super
+   * @param powerSource from Vehicle class as super
+   * @param noOfWheel from TruckCharecteristics class
+   * @param engineType from TruckCharecteristics class
+   * @param gearType from TruckCharecteristics class
+   * @param noOfDoors from TruckCharecteristics class
+   * @param truckType from TruckCharecteristics class
+   * @param wheelDrive from TruckCharecteristics class
+   * @param noOfSeats from TruckCharecteristics class
+   * @param horsePower from TruckCharecteristics class
    */
   Truck(int year, String make, String model,Color color, PowerSource powerSource,
       int noOfWheel, EngineType engineType, GearType gearType, Doors noOfDoors, TruckType truckType, WheelDrive wheelDrive, NoOfSeats noOfSeats, int horsePower) {
@@ -60,7 +60,7 @@ public class Truck extends TrucksCharecteristics implements PerformanceSpecs {
 
   /**
    *
-   * @return
+   * @return truckType
    */
   @Override
   public VheicleType getType() {
@@ -68,8 +68,8 @@ public class Truck extends TrucksCharecteristics implements PerformanceSpecs {
   }
 
   /**
-   *
-   * @return
+   *To String Method
+   * @return toString from super and another statement with horsepower and mpg
    */
   @Override
   public String toString() {

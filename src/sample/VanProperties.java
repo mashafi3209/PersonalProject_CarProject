@@ -1,7 +1,7 @@
 package sample;
 
 /**
- *
+ *Interfaces for VanProperties
  */
 public interface VanProperties {
   /**

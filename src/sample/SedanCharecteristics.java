@@ -6,19 +6,10 @@ package sample;
  *
  */
 public abstract class SedanCharecteristics extends Vehicle implements SedanProperties {
-  EngineType engineType;
   GearType gearType;
   SedanType sedanType;
 
 
-  /**
-   * Setter for property 'engineType'.
-   *
-   * @param engineType Value to set for property 'engineType'.
-   */
-  public void setEngineType(EngineType engineType) {
-    this.engineType = engineType;
-  }
 
 
 
@@ -47,27 +38,16 @@ public abstract class SedanCharecteristics extends Vehicle implements SedanPrope
    * @param model
    * @param color
    * @param powerSource
-   * @param engineType
    * @param gearType
    * @param sedanType
    */
 
-  public SedanCharecteristics(int year, String make, String model,Color color, PowerSource powerSource,EngineType engineType, GearType gearType,
+  public SedanCharecteristics(int year, String make, String model,Color color, PowerSource powerSource, GearType gearType,
       SedanType sedanType) {
     super(year, make, model, color, powerSource);
-   setEngineType(engineType);
     setGearType(gearType);
     setSedanType(sedanType);
 
-  }
-
-  /**
-   *
-   * @return
-   */
-  @Override
-  public String getEngineType() {
-    return null;
   }
 
 
@@ -96,8 +76,7 @@ public abstract class SedanCharecteristics extends Vehicle implements SedanPrope
    */
   @Override
   public String toString() {
-    return ("\n"+super.toString()+ "\nThis is a "+ sedanType + " sedan. \nIt has "+gearType + " gear. "
-        + "\nThe Engine on this sedan is " + engineType.getCode() );
+    return ("\n"+super.toString()+ "\nThis is a "+ sedanType + " sedan. \nIt has "+gearType + " gear.");
   }
 
   /**

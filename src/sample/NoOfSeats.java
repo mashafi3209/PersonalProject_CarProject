@@ -2,6 +2,7 @@ package sample;
 
 /**
  * Enum for No of Seat design
+ * Each enum has a description and seat formation name
  */
 public enum NoOfSeats {
 two("has two front seats but no back","two sitter"),

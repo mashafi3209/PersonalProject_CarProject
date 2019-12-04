@@ -1,12 +1,7 @@
 package sample;
 
 public interface SedanProperties {
-  /**
-   * Getter for property 'engineType'.
-   *
-   * @return Value for property 'engineType'.
-   */
-  public String getEngineType();
+
   /**
    * Getter for property 'gearType'.
    *

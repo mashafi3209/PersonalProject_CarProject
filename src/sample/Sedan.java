@@ -9,37 +9,33 @@ public class Sedan extends SedanCharecteristics implements SedanProperties{
    * @param model
    * @param color
    * @param powerSource
-   * @param engineType
    * @param gearType
    * @param sedanType
    */
   public Sedan(int year, String make, String model,
-      Color color, PowerSource powerSource, EngineType engineType, GearType gearType,
+      Color color, PowerSource powerSource, GearType gearType,
       SedanType sedanType) {
-    super(year, make, model, color, powerSource, engineType, gearType, sedanType);
+    super(year, make, model, color, powerSource, gearType, sedanType);
   }
 
-  /** {@inheritDoc} */
+  /**
+   *
+   * */
   @Override
   public VheicleType getType() {
     return sedanType;
   }
 
+
+
   /**
-   * Getter for property 'MPG'.
    *
-   * @return Value for property 'MPG'.
-   */
-  public double getMPG() {
-    return engineType.getMpg();
-
-  }
-
-
-  /** {@inheritDoc} */
+   *To String Method to print the mileage
+   *
+   * */
   @Override
   public String toString() {
-    return (super.toString())+ "The mpg for Sedan is " + getMPG();
+    return (super.toString());
 
   }
 }

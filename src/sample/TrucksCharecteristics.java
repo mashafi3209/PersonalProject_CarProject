@@ -186,13 +186,13 @@ public abstract class TrucksCharecteristics extends Vehicle implements TruckProp
 
 
   /**
-   *
+   *toString Method
    * */
   @Override
   public String toString() {
 
     return (super.toString()+ "\nThis is a "+ truckType + " truck. \nThe truck has "+ noOfDoors.getDoors() + "\nIt "+ noOfSeats.getTypeOfSeats() +
-        " seat which is known as " + noOfSeats.getSeatsFormation() + "\nThe Truck has "+ noOfWheel + " wheel in it \nIt is a " + wheelDrive +
+        " seat which is known as " + noOfSeats.getSeatsFormation() + "\nThe Truck has "+ noOfWheel + " wheel in it \nIt is a " + wheelDrive.getCode() +
         " Truck. \nIt has a "+gearType + " gear. \nThe Engine on this truck is " + engineType.getCode() );
   }
 

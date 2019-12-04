@@ -1,5 +1,7 @@
 package sample;
-//interfaces for
+/**
+ *Interface for different types of vheicle properties
+ */
 public interface VehicleProperties {
   /**
    * Getter for property 'year'.

@@ -16,12 +16,13 @@ public class Suv extends SuvCharecteristics implements SuvProperties{
    * @param gearType
    * @param noOfDoors
    * @param suvType
+   * @param wheelDrive
    * @param noOfSeats
    */
   public Suv(int year, String make, String model,
       Color color, PowerSource powerSource, EngineType engineType, GearType gearType, Doors noOfDoors,
-      SuvType suvType, NoOfSeats noOfSeats) {
-    super(year, make, model, color, powerSource, engineType, gearType, noOfDoors, suvType, noOfSeats);
+      SuvType suvType,WheelDrive wheelDrive, NoOfSeats noOfSeats) {
+    super(year, make, model, color, powerSource, engineType, gearType, noOfDoors, suvType,wheelDrive, noOfSeats);
   }
 
   /**
@@ -47,7 +48,7 @@ public class Suv extends SuvCharecteristics implements SuvProperties{
   /** {@inheritDoc} */
   @Override
   public String toString() {
-    return (super.toString())+ "\nThe MPG for Suv is " + getMPG();
+    return (super.toString())+ "\nThe MPG/Miles without charging(for electric cars only) for this Suv is " + getMPG();
 
   }
 }

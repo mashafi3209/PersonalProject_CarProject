@@ -1,7 +1,7 @@
 package sample;
 
 /**
- *
+ *Enum for wheel drive
  */
 public enum WheelDrive {
 
@@ -13,8 +13,9 @@ public enum WheelDrive {
   private String code;
 
   /**
+   *Contstructor for WheelDrive
    *
-   * @param code
+   * @param code for shortcut
    */
   WheelDrive(String code) {
     this.code = code;

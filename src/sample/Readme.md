@@ -7,7 +7,7 @@ It seems to me that I would be able to reach my goals on time
 From week#7 I decided working on the Car Project. 
 
 #Descripton
-Vehicle class is the main abstract class implements vehicle properties
+Vehicle class is the main abstract class implements vehicle properties. 
 
 #Built With
 - Java8

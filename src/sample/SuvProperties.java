@@ -10,6 +10,13 @@ public interface SuvProperties {
    * @return Value for property 'engineType'.
    */
   public String getEngineType();
+
+  /**
+   * Getter for property 'wheelDrive'.
+   *
+   * @return Value for property 'wheelDrive'.
+   */
+  public WheelDrive getWheelDrive();
   /**
    * Getter for property 'noOfDoors'.
    *

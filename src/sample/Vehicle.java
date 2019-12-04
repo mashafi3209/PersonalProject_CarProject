@@ -49,7 +49,11 @@ public abstract class Vehicle implements VehicleProperties {
     this.color = color;
   }
 
-  /** {@inheritDoc} */
+  /**
+   *Getter for property 'year'.
+   *
+   * @return Value for property 'year'.
+   * */
   public int getYear() {
     return year;
   }
@@ -63,7 +67,11 @@ public abstract class Vehicle implements VehicleProperties {
     this.year = year;
   }
 
-  /** {@inheritDoc} */
+  /**
+   * Getter for property 'make'.
+   *
+   * @return Value for property 'make'.
+   * */
   public String getMake() {
     return make;
   }
@@ -77,7 +85,11 @@ public abstract class Vehicle implements VehicleProperties {
     this.make = make;
   }
 
-  /** {@inheritDoc} */
+  /**
+   * Getter for the property 'model'
+   *
+   * @return model
+   */
   public String getModel() {
     return model;
   }
@@ -91,7 +103,7 @@ public abstract class Vehicle implements VehicleProperties {
     this.model = model;
   }
 
-  /** {@inheritDoc} */
+  /** abstract method getType*/
   public abstract VheicleType getType();
 
 
@@ -115,13 +127,12 @@ public abstract class Vehicle implements VehicleProperties {
   }
 
   /**
-   *
-   * @return
+   * ToString Method
+   * @return String
    */
   @Override
   public String toString()
   {
-
     return("\nThis is a "+getType().getName() + "\nIt is made by " + make +"\nIt is know as " + model +
         ".\nIt came out in the year of " +year +"\nThe color of the vehicle is " + color + "\nThis vehicle runs on "+ powerSource + " mode");
 

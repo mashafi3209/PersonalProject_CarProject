@@ -65,7 +65,7 @@ public abstract class VanCharecteristics extends Vehicle implements VanPropertie
 
   /**
    *
-   * @param year
+   * @param year of the vehicle
    * @param make
    * @param model
    * @param color
