@@ -1,5 +1,8 @@
 package sample;
 
+/**
+ * Performance specs for mpg and horse power
+ */
 public interface PerformanceSpecs {
 
   /**

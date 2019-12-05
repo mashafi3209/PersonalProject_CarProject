@@ -1,10 +1,23 @@
 package sample;
 
 /**
- *
+ *Enum for Suv Type
  */
 public enum SuvType implements VheicleType{
-  Subcompact,Compact,Mid_Size,Full_Size;
+  /**
+   * Enum for subcompact SUV
+   */
+  Subcompact,
+  /**
+   * Enum for Compact SUV
+   */
+  Compact,
+  /**
+   * Enum for Mid_Size SUV
+   */Mid_Size,
+  /**
+   * Enum for fullsize suv
+   */Full_Size;
 
   /**
    *

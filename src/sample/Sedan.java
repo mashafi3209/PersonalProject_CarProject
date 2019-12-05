@@ -1,16 +1,19 @@
 package sample;
 
+/**
+ * Sedan Class
+ */
 public class Sedan extends SedanCharecteristics implements SedanProperties{
 
   /**
    *
-   * @param year
-   * @param make
-   * @param model
-   * @param color
-   * @param powerSource
-   * @param gearType
-   * @param sedanType
+   * @param year Year of the sedan
+   * @param make make of the sedan
+   * @param model model of the sedan
+   * @param color color of the sedan
+   * @param powerSource powersource of the sedan
+   * @param gearType gearType of the sedan
+   * @param sedanType sedantype of the sedan
    */
   public Sedan(int year, String make, String model,
       Color color, PowerSource powerSource, GearType gearType,
@@ -19,8 +22,9 @@ public class Sedan extends SedanCharecteristics implements SedanProperties{
   }
 
   /**
-   *
+   *Getter for sedan type
    * */
+
   @Override
   public VheicleType getType() {
     return sedanType;

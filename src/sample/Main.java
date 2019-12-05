@@ -13,6 +13,9 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+/**
+ * Print statements are there to build f=different kind of vehicle
+ */
 public class Main {
     public static void main(String[] args) {
         //Printing truck system

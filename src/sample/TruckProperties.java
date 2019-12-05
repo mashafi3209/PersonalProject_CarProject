@@ -14,6 +14,10 @@ public interface TruckProperties {
 */
 package sample;
 
+/**
+ * interfaces for Truck properties
+ */
+
 public interface TruckProperties {
   /**
    * Getter for property 'noOfWheel'.

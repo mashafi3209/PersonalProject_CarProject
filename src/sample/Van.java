@@ -1,7 +1,7 @@
 package sample;
 
 /**
- *
+ *Van class
  */
 public class Van extends VanCharecteristics implements VanProperties{
   /**
@@ -17,7 +17,7 @@ public class Van extends VanCharecteristics implements VanProperties{
    * @param vanType from VanCharacteristics class
    * @param noOfSeats from VanCharacteristics class
    */
-
+//Constructor
   public Van(int year, String make, String model,
       Color color, PowerSource powerSource, EngineType engineType, GearType gearType,
       VanType vanType, Doors noOfDoors, NoOfSeats noOfSeats) {

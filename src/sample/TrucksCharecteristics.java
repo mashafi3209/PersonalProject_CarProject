@@ -1,7 +1,7 @@
 package sample;
 
 /**
- *
+ *Abstract class for truck charectersistics
  */
 public abstract class TrucksCharecteristics extends Vehicle implements TruckProperties {
   int noOfWheel;
@@ -81,15 +81,16 @@ public abstract class TrucksCharecteristics extends Vehicle implements TruckProp
    * @param make from Vehicle class as super
    * @param model from Vehicle class as super
    * @param color from Vehicle class as super
-   * @param powerSource
-   * @param noOfWheel
-   * @param engineType
-   * @param gearType
-   * @param noOfDoors
-   * @param truckType
-   * @param wheelDrive
-   * @param noOfSeats
+   * @param powerSource from Vehicle class as super
+   * @param noOfWheel no of truck Wheels
+   * @param engineType engine type of the trucks
+   * @param gearType gearType gear type of the truck
+   * @param noOfDoors noOfDoors of the truck
+   * @param truckType truckType of the truck
+   * @param wheelDrive wheelDrive of the truck
+   * @param noOfSeats no of Seats of the truck
    */
+  //Constructor
   TrucksCharecteristics(int year, String make, String model,Color color, PowerSource powerSource,int noOfWheel, EngineType engineType, GearType gearType, Doors noOfDoors, TruckType truckType, WheelDrive wheelDrive,NoOfSeats noOfSeats){
     super(year, make, model, color, powerSource);
 

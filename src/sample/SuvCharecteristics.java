@@ -1,7 +1,6 @@
 package sample;
-
 /**
- *
+ *Abstract class for SUV charectersistics
  */
 public abstract class SuvCharecteristics extends Vehicle implements SuvProperties {
   EngineType engineType;
@@ -72,13 +71,14 @@ public abstract class SuvCharecteristics extends Vehicle implements SuvPropertie
    * @param make from Vehicle class as super
    * @param model from Vehicle class as super
    * @param color from Vehicle class as super
-   * @param powerSource
-   * @param engineType
-   * @param gearType
-   * @param noOfDoors
-   * @param suvType
-   * @param noOfSeats
+   * @param powerSource from SUV
+   * @param engineType from SUV
+   * @param gearType from SUV
+   * @param noOfDoors from SUV
+   * @param suvType from SUV
+   * @param noOfSeats from SUV
    */
+  //Constructor
   public SuvCharecteristics(int year, String make, String model,Color color, PowerSource powerSource,EngineType engineType, GearType gearType, Doors noOfDoors,
       SuvType suvType,WheelDrive wheelDrive, NoOfSeats noOfSeats) {
     super(year, make, model, color, powerSource);

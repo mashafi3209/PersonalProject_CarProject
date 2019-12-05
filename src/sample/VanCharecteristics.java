@@ -76,6 +76,7 @@ public abstract class VanCharecteristics extends Vehicle implements VanPropertie
    * @param noOfDoors from VanCharacteristics class
    * @param noOfSeats from VanCharacteristics class
    */
+  //Constructor
   public VanCharecteristics(int year, String make, String model,Color color, PowerSource powerSource,EngineType engineType, GearType gearType,
       VanType vanType, Doors noOfDoors, NoOfSeats noOfSeats) {
     super(year, make, model, color, powerSource);

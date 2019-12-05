@@ -4,7 +4,20 @@ package sample;
  *Enum for VanType
  */
 public enum VanType implements VheicleType{
-  MuscleCar,Convertable,FullSize,MidSize,Compact;
+  /**
+   * Enum for Mini Van
+   */
+  Mini,
+  /**
+   * Enum for midsize van
+   */
+  MidSize,
+  /**
+   * Enum for Full Size Van
+   */FullSize,
+  /**
+   * Enum for Commercial Van
+   */Commercial;
 
   /**
    *

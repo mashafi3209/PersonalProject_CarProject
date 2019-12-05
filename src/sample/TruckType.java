@@ -1,10 +1,21 @@
 package sample;
 
 /**
- *
+ *Enum class for Truck type
  */
 public enum TruckType implements VheicleType {
-  Semi,PickUp,TowTruck;
+  /**
+   * Enum for Semi Truck
+   */
+  Semi,
+  /**
+   * Enum for PickUp Truck
+   */
+  PickUp,
+  /**
+   * Enum for tow Truck
+   */
+  TowTruck;
 
   /**
    *

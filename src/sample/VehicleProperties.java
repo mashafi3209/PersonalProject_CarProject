@@ -1,6 +1,6 @@
 package sample;
 /**
- *Interface for different types of vheicle properties
+ *Interface for different types of vehicles properties
  */
 public interface VehicleProperties {
   /**

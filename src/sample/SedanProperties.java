@@ -1,4 +1,7 @@
 package sample;
+/**
+ * interfaces for Sedan
+ */
 
 public interface SedanProperties {
 

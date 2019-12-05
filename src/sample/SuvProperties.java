@@ -1,7 +1,7 @@
 package sample;
 
 /**
- *
+ *interfaces for SUV
  */
 public interface SuvProperties {
   /**

@@ -5,8 +5,18 @@ package sample;
  * Each enum has a description and seat formation name
  */
 public enum NoOfSeats {
-two("has two front seats but no back","two sitter"),
+  /**
+   * two Sitter information
+   */
+  two("has two front seats but no back","two sitter"),
+  /**
+   * five Sitter information
+   */
+
   five("has two front seats and three back","five sitter"),
+  /**
+   * Seven Sitter information
+   */
   seven("has two front seats, five back","seven sitter");
 
 public String typeOfSeats;

@@ -1,10 +1,29 @@
 package sample;
 
 /**
- *
+ *Enum for Sedan type
  */
 public enum SedanType implements VheicleType{
-  MuscleCar,Convertable,FullSize,MidSize,Compact;
+  /**
+   * Sedan type Muscle Car
+   */
+  MuscleCar,
+  /**
+   * Sedan type Convertable Car
+   */
+  Convertable,
+  /**
+   * Sedan type Fullsize Car
+   */
+  FullSize,
+  /**
+   * Sedan type Midsize Car
+   */
+  MidSize,
+  /**
+   * Sedan type Compact Car
+   */
+  Compact;
 
   /**
    *

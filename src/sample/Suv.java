@@ -1,7 +1,6 @@
 package sample;
-
 /**
- *
+ *Van class
  */
 public class Suv extends SuvCharecteristics implements SuvProperties{
 
@@ -19,6 +18,7 @@ public class Suv extends SuvCharecteristics implements SuvProperties{
    * @param wheelDrive
    * @param noOfSeats
    */
+  //Constructor
   public Suv(int year, String make, String model,
       Color color, PowerSource powerSource, EngineType engineType, GearType gearType, Doors noOfDoors,
       SuvType suvType,WheelDrive wheelDrive, NoOfSeats noOfSeats) {

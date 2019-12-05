@@ -1,7 +1,7 @@
 package sample;
 
 /**
- *
+ *Abstract class for Vehicle class
  */
 public abstract class Vehicle implements VehicleProperties {
 
@@ -16,12 +16,13 @@ public abstract class Vehicle implements VehicleProperties {
 
   /**
    *
-   * @param year
-   * @param make
-   * @param model
-   * @param color
-   * @param powerSource
+   * @param year declaring the year of the vehicle
+   * @param make  declaring the year of the vehicle
+   * @param model declaring the model of the vehicle
+   * @param color declaring the color of the vehicle
+   * @param powerSource declaring the powersource of the vehicle
    */
+  //Constructor
   Vehicle(int year, String make, String model,Color color, PowerSource powerSource){
     this.year = year;
     this.make = make;

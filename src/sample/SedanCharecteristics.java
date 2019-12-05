@@ -3,15 +3,11 @@ package sample;
 
 
 /**
- *
+ *Abstract class for sedan charectersistics
  */
 public abstract class SedanCharecteristics extends Vehicle implements SedanProperties {
   GearType gearType;
   SedanType sedanType;
-
-
-
-
 
   /**
    * Setter for property 'gearType'.
@@ -33,15 +29,15 @@ public abstract class SedanCharecteristics extends Vehicle implements SedanPrope
 
   /**
    *
-   * @param year
-   * @param make
-   * @param model
-   * @param color
-   * @param powerSource
-   * @param gearType
-   * @param sedanType
+   * @param year year of the sedan
+   * @param make make of the sedan
+   * @param model model of the sedan
+   * @param color color of the sedan
+   * @param powerSource powersource of the sedan
+   * @param gearType gearType of the sedan
+   * @param sedanType type of the sedan
    */
-
+//Constructor for SedanCharecteristics
   public SedanCharecteristics(int year, String make, String model,Color color, PowerSource powerSource, GearType gearType,
       SedanType sedanType) {
     super(year, make, model, color, powerSource);
@@ -52,7 +48,7 @@ public abstract class SedanCharecteristics extends Vehicle implements SedanPrope
 
 
   /**
-   *
+   *getter for gearType
    * @return
    */
   @Override
@@ -61,7 +57,7 @@ public abstract class SedanCharecteristics extends Vehicle implements SedanPrope
   }
 
   /**
-   *
+   * getter for SedanType
    * @return
    */
   @Override
@@ -72,7 +68,7 @@ public abstract class SedanCharecteristics extends Vehicle implements SedanPrope
 
   /**
    *
-   * @return
+   * @return string of the sedan type and its gear type
    */
   @Override
   public String toString() {
